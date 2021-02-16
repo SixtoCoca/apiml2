@@ -16,7 +16,7 @@ server.post("/", (peticion, respuesta) => {
   });
 });
 
-const port = 3000;
+const port = process.env.PORT || 8000;
 server.listen(port, () => {
   console.log("Escuchando en http://localhost:" + port);
 });
