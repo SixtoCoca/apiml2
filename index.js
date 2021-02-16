@@ -5,7 +5,7 @@ server.use(bodyparser.json());
 
 server.get("/", (peticion, respuesta) => {
   respuesta.json({
-    mensaje: "hola",
+    mensaje: "Estamos en google",
     peticion: peticion.headers,
   });
 });
